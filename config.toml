@@ -1,7 +1,5 @@
 baseurl                  = "https://odelaf.github.io"           # Your domain name
 languageCode             = "en-us"
-defaultContentLanguage   = "en-us"
-isMultilingual           = true
 title                    = "odelaf"
 theme                    = "mainroad"
 paginate                 = "10" # Number of posts per page
