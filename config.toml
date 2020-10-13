@@ -1,0 +1,80 @@
+baseurl                  = "odelaf.github.io"           # Your domain name
+languageCode             = "en-us"
+defaultContentLanguage   = "en-us"
+isMultilingual           = true
+title                    = "odelaf"
+theme                    = "mainroad"
+paginate                 = "10" # Number of posts per page
+
+disqusShortname = "" # Enable comments by entering your Disqus shortname
+googleAnalytics = "" # Enable Google Analytics by entering your tracking id
+
+[Author]
+  name = "odelaf"
+  bio = "Osvaldo de la Fuente Castro, alias odelaf. Abogado, especializado en regulación ambiental."
+  avatar = "img/avatar.png"
+
+[Params]
+  description = "Página personal de Osvaldo de la Fuente Castro" # Description of your site
+  copyright = "odelaf"
+  opengraph = true
+  twitter_cards = false
+  readmore = false # Show "Read more" button in list if true
+  authorbox = false
+  pager = true
+  post_meta = ["author", "date", "categories"] # Order of post meta information
+  mainSections = ["blog", "manuscritos", "publicaciones"] # Specify section pages to show on home page and the "Recent articles" widget
+  dateformat = "" # Change the format of dates
+
+[Params.logo]
+  subtitle = "Mi página personal" # Logo subtitle
+
+[Params.sidebar]
+  home = "right"   # Configure layout for home page
+  list = "right"   # Configure layout for list pages
+  single = false # Configure layout for single pages
+  # Enable widgets in given order
+  widgets = ["taglist", "social"]
+
+[Params.widgets]
+  recent_num = 5 # Set the number of articles in the "Recent articles" widget
+  tags_counter = false # Enable counter for each tag in "Tags" widget (disabled by default)
+
+[Params.widgets.social]
+  # Enable parts of social widget
+  #facebook = "username"
+  #twitter = "username"
+  #instagram = "username"
+  linkedin = "osvaldo-de-la-fuente-c-9712a02b"
+  #telegram = "username"
+  #github = "ericzhng"
+  #gitlab = "username"
+  #bitbucket = "username"
+  #email = "email"
+
+[[Params.widgets.social.custom]]
+  title = "ORCID"
+  url = "https://orcid.org/0000-0001-7526-4391"
+  icon = "ORCIDiD_iconvector.svg"
+
+[menu]
+  [[menu.main]]
+    identifier = "blog"
+    name = "blog"
+    title = "blog section"
+    url = "/blog/"
+    weight = 10
+
+    [[menu.main]]
+    identifier = "manuscritos"
+    name = "manuscritos"
+    title = "manuscritos section"
+    url = "/manuscritos/"
+    weight = 20
+
+    [[menu.main]]
+    identifier = "publicaciones"
+    name = "publicaciones"
+    title = "publicaciones section"
+    url = "/publicaciones/"
+    weight = 30
