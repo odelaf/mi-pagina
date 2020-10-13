@@ -1,4 +1,4 @@
-baseurl                  = "odelaf.github.io"           # Your domain name
+baseurl                  = "https://odelaf.github.io"           # Your domain name
 languageCode             = "en-us"
 defaultContentLanguage   = "en-us"
 isMultilingual           = true
