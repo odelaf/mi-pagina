@@ -10,7 +10,7 @@ googleAnalytics = "" # Enable Google Analytics by entering your tracking id
 [Author]
   name = "odelaf"
   bio = "Osvaldo de la Fuente Castro, alias odelaf. Abogado, especializado en regulación ambiental."
-  avatar = "img/avatar.png"
+  avatar = "img/photo_02.jpg"
 
 [Params]
   description = "Página personal de Osvaldo de la Fuente Castro" # Description of your site
