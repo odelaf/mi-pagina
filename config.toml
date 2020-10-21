@@ -14,15 +14,26 @@ googleAnalytics = "" # Enable Google Analytics by entering your tracking id
 
 [Params]
   description = "Página personal de Osvaldo de la Fuente Castro" # Description of your site
+  DefaultContentLanguage = "es"
   copyright = "odelaf"
   opengraph = true
   twitter_cards = false
-  readmore = false # Show "Read more" button in list if true
+  readmore = true # Show "Read more" button in list if true
   authorbox = false
   pager = true
   post_meta = ["author", "date", "categories"] # Order of post meta information
   mainSections = ["blog", "manuscritos", "publicaciones"] # Specify section pages to show on home page and the "Recent articles" widget
   dateformat = "" # Change the format of dates
+
+[languages]
+  [languages.es]
+    title = "odelaf"
+    languageName = "Spanish"
+    weight = 1
+  [languages.en]
+    title = "odelaf"
+    languageName = "English"
+    weight = 2
 
 [Params.logo]
   subtitle = "Mi página personal" # Logo subtitle
