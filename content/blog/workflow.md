@@ -54,7 +54,7 @@ Finalmente, es útil trabajar con algún software que ayude a organizar las nota
 
 Todo trabajo académico descansa en publicaciones anteriores. La referencia a ellas cumple diversos propósitos, tales como situar el trabajo propio en algún marco de discusión que se encuentra dibujado por investigaciones anteriores, referir a trabajos ajenos que sirven como contrapunto a las ideas que uno desarrolla, hacer una remisión a un desarrollo más profundo de alguna idea que nuestro trabajo menciona, etc. En la academia existen ciertas prácticas para ello, que pueden organizarse por medio de dos grandes tipos de cita: en el texto o al pie de página. Adicionalmente, puede tratarse de una referencia breve (que se desarrolla al final del texto en la sección dedicada a ello) o una referencia completa que luego se usa en una versión más breve.
 
-La diversidad de maneras que existen para hacer referencia a otros trabajos es muchas veces abrumadora. Cada revista académica o editorial maneja su propia manera de hacerlo. Para poder lidiar con ello, un sistema de referencia es fundamental. Este se compone de dos archivos que sirven para automatizar el proceso: un archivo con la base de datos (extensión .bib) y un archivo con el sistema de citas (extensión .cls).
+La diversidad de maneras que existen para hacer referencia a otros trabajos es muchas veces abrumadora. Cada revista académica o editorial maneja su propia manera de hacerlo. Para poder lidiar con ello, un sistema de referencia es fundamental. Este se compone de dos archivos que sirven para automatizar el proceso: un archivo con la base de datos (extensión .bib) y un archivo con el sistema de citas (extensión .csl).
 
 ### Una base de datos bibliográfica (bib)
 
@@ -68,7 +68,7 @@ La segunda característica es la creación de un archivo único (extensión .bib
 
 En general, toda publicación cuenta con una manera de hacer referencias a otros trabajos que se establece como un conjunto de reglas. Los sistemas más comunes son los establecidos por la American Psychological Association (APA) y la Chicago University Press. El proceso aquí creo que es conocido: primero es necesario familiarizarse a grandes rasgos con el sistema (si el título de un artículo de revista va entre comillas o no, si el año va al inicio o al final, si se escribe el nombre completo o solo las iniciales, etc.). Y en caso de dudas, se pueden consultar las reglas y seguirlas.
 
-Como estas reglas son sencillas, es posible automatizar el proceso. El archivo cls contiene las reglas del sistema elegido en lenguaje de programación, las cuales son aplicadas al manuscrito en texto plano (el input) y dan como resultado un manuscrito con todas las referencias completadas (el output). Este sencillo proceso puede realizarse tantas veces como sea necesario y cambiando el archivo cls entregará el manuscrito bajo las reglas que allí se encuentren.
+Como estas reglas son sencillas, es posible automatizar el proceso. El archivo cls contiene las reglas del sistema elegido en lenguaje de programación, las cuales son aplicadas al manuscrito en texto plano (el input) y dan como resultado un manuscrito con todas las referencias completadas (el output). Este sencillo proceso puede realizarse tantas veces como sea necesario y cambiando el archivo csl entregará el manuscrito bajo las reglas que allí se encuentren.
 
 Por cierto, no es necesario aprender programación para traducir las reglas para las referencias y crear un archivo csl. Estos archivos son [públicos](https://citationstyles.org/).
 
@@ -109,9 +109,9 @@ En el siguiente video se explica Markdown con un poco más de detalle. Solo quis
 
 He dicho que el uso de texto plano agiliza muchísimo el trabajo. Sin embargo, habitualmente nuestros borradores y trabajos los compartimos en otros formatos, como docx o pdf. Aquí entra otro software llamado Pandoc. Básicamente, lo que hace es convertir nuestro archivo en texto plano en el formato requerido. Para ello, hay que hacer algo poco habitual pero que en realidad es muy sencillo, similar a escribir la dirección de una página web en un navegador pero, en este caso, es una línea de comandos que se escribe en una interfaz (Terminal, en Mac):
 
-``pandoc manuscrito.md -s --reference-doc custom-reference.docx -o manuscrito.docx``
+``pandoc manuscrito.md -s --bibliography bibliography.bib --csl archivo.csl --reference-doc custom-reference.docx -o manuscrito.docx``
 
-En este ejemplo el input es un manuscrito escrito en texto plano (manuscrito.md) y el output es un archivo docx (manuscrito.docx), que en su elaboración sigue el formato de otro archivo docx que fue previamente creado para estos efectos (custom-reference.docx).
+En este ejemplo el input es un manuscrito escrito en texto plano (manuscrito.md) y el output es un archivo docx (manuscrito.docx), que en su elaboración sigue el formato de otro archivo docx que fue previamente creado para estos efectos (custom-reference.docx). Los archivos `bibliography.bib` y `archivo.csl` hacen referencia a la base de datos bibliográfica y el sistema de referencias, respectivamente.
 
 Al principio, por estar habituados a trabajar en Office puede parecer escalofriante. Toma un poco de tiempo preparar todo lo necesario para poder trabajar con texto plano y eso requiere aprender algunas cosas nuevas. Pero el poco tiempo que requiere este pequeño aprendizaje se compensa significativamente con la agilidad que se gana al trabajar en texto plano.
 
