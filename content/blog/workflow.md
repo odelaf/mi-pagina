@@ -64,11 +64,11 @@ Yo uso [Zotero](https://www.zotero.org/) con estos fines. Este software tiene do
 
 La segunda característica es la creación de un archivo único (extensión .bib) donde se encuentran todas las publicaciones del registro, que se va actualizando automáticamente cada vez que se actualiza la base de datos (para ello, es necesario instalar la extensión [Better BibTeX](https://retorque.re/zotero-better-bibtex/)).
 
-### Un sistema de citas
+### Un sistema de citas (csl)
 
 En general, toda publicación cuenta con una manera de hacer referencias a otros trabajos que se establece como un conjunto de reglas. Los sistemas más comunes son los establecidos por la American Psychological Association (APA) y la Chicago University Press. El proceso aquí creo que es conocido: primero es necesario familiarizarse a grandes rasgos con el sistema (si el título de un artículo de revista va entre comillas o no, si el año va al inicio o al final, si se escribe el nombre completo o solo las iniciales, etc.). Y en caso de dudas, se pueden consultar las reglas y seguirlas.
 
-Como estas reglas son sencillas, es posible automatizar el proceso. El archivo cls contiene las reglas del sistema elegido en lenguaje de programación, las cuales son aplicadas al manuscrito en texto plano (el input) y dan como resultado un manuscrito con todas las referencias completadas (el output). Este sencillo proceso puede realizarse tantas veces como sea necesario y cambiando el archivo csl entregará el manuscrito bajo las reglas que allí se encuentren.
+Como estas reglas son sencillas, es posible automatizar el proceso. El archivo csl contiene las reglas del sistema elegido en lenguaje de programación, las cuales son aplicadas al manuscrito en texto plano (el input) y dan como resultado un manuscrito con todas las referencias completadas (el output). Este sencillo proceso puede realizarse tantas veces como sea necesario y cambiando el archivo csl entregará el manuscrito bajo las reglas que allí se encuentren.
 
 Por cierto, no es necesario aprender programación para traducir las reglas para las referencias y crear un archivo csl. Estos archivos son [públicos](https://citationstyles.org/).
 
