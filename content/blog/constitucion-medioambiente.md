@@ -4,7 +4,7 @@ date: 2020-10-15T11:49:14-03:00
 author: odelaf
 draft: true
 categories:
-    - "proceso constituyente"
+    - blog
 tags:
     - "derecho ambiental"
     - "derechos humanos"
